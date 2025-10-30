@@ -966,56 +966,69 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
-/* header */
 .site-header {
-	background: #005D23;
+	background-color: #005D23;
+	/* Deep green background */
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	position: sticky;
 	top: 0;
 	z-index: 999;
+	padding: 0.5rem 2rem;
 }
 
+/* Inner container */
 .header-inner {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 1rem 2rem;
 	display: flex;
 	align-items: center;
+	/* Vertically centers logo + menu */
 	justify-content: space-between;
+	/* Logo left, menu right */
+	gap: 2rem;
 }
 
+/* Logo area */
 .site-branding {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .site-branding img {
-	height: 60px;
+	height: 70px;
+	width: auto;
 }
 
+/* Navigation menu */
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	gap: 1.5rem;
+	gap: 2rem;
+	align-items: center;
 }
 
 .main-navigation a {
 	text-decoration: none;
 	color: #ffffff;
-	font-weight: 500;
+	/* White links */
+	font-weight: 600;
+	font-size: 1rem;
+	transition: color 0.3s ease;
 }
 
 .main-navigation a:hover {
 	color: #FCBF16;
+	/* Gold hover color */
 }
 
+/* Hamburger toggle for mobile (hidden by default) */
 .menu-toggle {
 	display: none;
 	background: none;
 	border: none;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
+	color: #fff;
 	cursor: pointer;
 }
