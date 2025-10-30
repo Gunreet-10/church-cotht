@@ -982,17 +982,13 @@ textarea {
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	/* Vertically centers logo + menu */
 	justify-content: space-between;
-	/* Logo left, menu right */
-	gap: 2rem;
 }
 
 /* Logo area */
 .site-branding {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
 }
 
 .site-branding img {
