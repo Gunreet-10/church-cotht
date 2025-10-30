@@ -28,31 +28,21 @@
 		<header id="masthead" class="site-header">
 			<div class="header-inner">
 				<div class="site-branding">
-					<a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link">
-						<?php
-						if (has_custom_logo()) {
-							the_custom_logo();
-						} else {
-							echo '<h1 class="site-title">' . get_bloginfo('name') . '</h1>';
-						}
-						?>
-					</a>
-					<p class="site-description"><?php bloginfo('description'); ?></p>
+					<?php the_custom_logo(); ?>
 				</div>
 
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">☰</button>
 					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-							'container'      => false,
-						)
-					);
+					wp_nav_menu(array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'container'      => false,
+					));
 					?>
 				</nav>
 			</div>
 		</header>
+
 
 		<div id="content" class="site-content">
