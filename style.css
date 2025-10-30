@@ -992,6 +992,7 @@ textarea {
 .site-branding {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .site-branding img {
