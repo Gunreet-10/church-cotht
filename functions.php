@@ -95,8 +95,8 @@ function cotht_parent_setup()
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 50,
-			'width'       => 50,
+			'height'      => 250,
+			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		)
