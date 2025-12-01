@@ -1029,3 +1029,8 @@ textarea {
 	color: #fff;
 	cursor: pointer;
 }
+
+.page-title,
+.entry-title {
+	display: none !important;
+}
