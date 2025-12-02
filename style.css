@@ -1034,3 +1034,7 @@ textarea {
 .entry-title {
 	display: none !important;
 }
+
+.page-header {
+	display: none !important;
+}
